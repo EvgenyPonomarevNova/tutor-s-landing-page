@@ -132,6 +132,7 @@ section {
   text-align: center;
   color: #aaa;
   font-size: 14px;
+  margin-top: 10px;
 }
 .footer__grid {
   display: flex;
@@ -147,22 +148,22 @@ section {
   min-width: 200px;
   display: flex;
   flex-flow: column;
-align-items: center;
+  align-items: center;
 }
 .footer__mid {
   flex: 1;
   min-width: 200px;
   display: flex;
   flex-flow: column;
-align-items: center;
-padding: 0;
+  align-items: center;
+  padding: 0;
 }
 .footer__right {
   flex: 1;
   min-width: 200px;
   display: flex;
   flex-flow: column;
-align-items: center;
+  align-items: center;
 }
 .footer a {
   color: #0077ff;

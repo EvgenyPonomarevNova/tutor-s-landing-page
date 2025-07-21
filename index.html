@@ -4,40 +4,72 @@
     <meta charset="UTF-8" />
     <title>TutorCenter – WebGL + 3D</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <canvas id="bg"></canvas>
 
     <header class="content hero">
       <h1>TutorCenter</h1>
-      <p>WebGL-фон + 3D-карточки</p>
-      <button class="btn1" onclick="scrollToSection('content')">Смотреть</button>
+      <p>Подготовка к ЕГЭ и ОГЭ онлайн и офлайн</p>
+      <button class="btn1" onclick="scrollToSection('content')">
+        Смотреть
+      </button>
     </header>
     <section class="content" id="content">
       <h2>О нас</h2>
-      <p>Команда репетиторов с WebGL-фоном и 3D-карточками.</p>
+      <p>
+        TutorCenter — это команда профессиональных репетиторов по математике,
+        русскому и английскому. 5 лет подряда 95 % наших учеников поступают в
+        вузы мечты.
+      </p>
       <div class="gallery">
         <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1503676260728-1c00ae0949f2?auto=format&fit=crop&w=400&q=60"
-            alt=""
-          />
+          <img src="./image/mMf3VFvE7pk.jpg" alt="" />
           <div class="card__body">Математика – 1 500 ₽</div>
         </div>
         <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1526406915894-7bcd65f60845?auto=format&fit=crop&w=400&q=60"
-            alt=""
-          />
+          <img src="./image/mMf3VFvE7pk.jpg" alt="" />
           <div class="card__body">Русский – 1 400 ₽</div>
         </div>
         <div class="card">
+          <img src="./image/mMf3VFvE7pk.jpg" alt="" />
+          <div class="card__body">Английский – 1 600 ₽</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="section__title">Программы</h2>
+      <div class="gallery">
+        <div class="card">
           <img
-            src="https://images.unsplash.com/photo-1581803118522-7b72a50f7e9f?auto=format&fit=crop&w=400&q=60"
+            src="./image/mMf3VFvE7pk.jpg"
             alt=""
           />
-          <div class="card__body">Английский – 1 600 ₽</div>
+          <div class="card__body">
+            <h3>Математика ЕГЭ</h3>
+            <p>Разовое – 1 500 ₽</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./image/mMf3VFvE7pk.jpg"
+            alt=""
+          />
+          <div class="card__body">
+            <h3>Русский ОГЭ</h3>
+            <p>Интенсив – 20 000 ₽</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./image/mMf3VFvE7pk.jpg"
+            alt=""
+          />
+          <div class="card__body">
+            <h3>Английский ЕГЭ</h3>
+            <p>Курс – 25 000 ₽</p>
+          </div>
         </div>
       </div>
     </section>
@@ -69,22 +101,26 @@
       </form>
     </section>
     <!-- === ФУТЕР === -->
-<footer class="footer">
-  <div class="footer__grid">
-    <div class="footer__left">
-      <h3>TutorCenter</h3>
-      <p>Профессиональная подготовка к ЕГЭ и ОГЭ</p>
-    </div>
-    <div class="footer__mid">
-      <a href="tel:+79991234567">+7 999 123-45-67</a>
-      <a href="mailto:hello@tutorcenter.ru">hello@tutorcenter.ru</a>
-    </div>
-    <div class="footer__right">
-      <a href="https://instagram.com/tutorcenter">Instagram</a>
-      <a href="https://t.me/tutorcenter">Telegram</a>
-    </div>
-  </div>
-  <p class="footer__copy">© TutorCenter 2024 — все права защищены</p>
-</footer>
+    <footer class="footer">
+      <div class="footer__grid">
+        <div class="footer__left">
+          <h3>TutorCenter</h3>
+          <p>Профессиональная подготовка к ЕГЭ и ОГЭ</p>
+        </div>
+        <div class="footer__mid">
+          <a href="tel:+79991234567">+7 999 123-45-67</a>
+          <a href="mailto:hello@tutorcenter.ru">hello@tutorcenter.ru</a>
+        </div>
+        <div class="footer__right">
+          <a href="https://instagram.com/tutorcenter">Instagram</a>
+          <a href="https://t.me/tutorcenter">Telegram</a>
+        </div>
+      </div>
+      <p class="footer__copy">© TutorCenter 2024 — все права защищены</p>
+    </footer>
+    <script src="https://unpkg.com/three@0.152.0/build/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>
