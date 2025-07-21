@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TutorCenter – WebGL + 3D</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+
+    <header class="content hero">
+      <h1>TutorCenter</h1>
+      <p>WebGL-фон + 3D-карточки</p>
+      <button class="btn" onclick="scrollToSection('content')">Смотреть</button>
+    </header>
+    <section class="content" id="content">
+      <h2>О нас</h2>
+      <p>Команда репетиторов с WebGL-фоном и 3D-карточками.</p>
+      <div class="gallery">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1503676260728-1c00ae0949f2?auto=format&fit=crop&w=400&q=60"
+            alt=""
+          />
+          <div class="card__body">Математика – 1 500 ₽</div>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1526406915894-7bcd65f60845?auto=format&fit=crop&w=400&q=60"
+            alt=""
+          />
+          <div class="card__body">Русский – 1 400 ₽</div>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1581803118522-7b72a50f7e9f?auto=format&fit=crop&w=400&q=60"
+            alt=""
+          />
+          <div class="card__body">Английский – 1 600 ₽</div>
+        </div>
+      </div>
+    </section>
+    <!-- === ФОРМА ОБРАТНОЙ СВЯЗИ === -->
+    <section class="form">
+      <h2 class="section__title">Онлайн-запись</h2>
+      <form action="https://formspree.io/f/YOUR_ID" method="POST">
+        <input type="text" name="name" placeholder="Имя" required />
+        <input type="tel" name="phone" placeholder="Телефон" required />
+        <input type="email" name="email" placeholder="E-mail" />
+        <select name="subject" required>
+          <option value="" disabled selected>Выберите предмет</option>
+          <option value="math">Математика</option>
+          <option value="russian">Русский</option>
+          <option value="english">Английский</option>
+        </select>
+        <select name="level" required>
+          <option value="" disabled selected>Уровень подготовки</option>
+          <option value="oge">ОГЭ 9 класс</option>
+          <option value="ege">ЕГЭ 11 класс</option>
+          <option value="adult">Взрослые</option>
+        </select>
+        <textarea
+          name="comment"
+          placeholder="Комментарий или вопрос"
+          rows="4"
+        ></textarea>
+        <button class="btn" type="submit">Отправить заявку</button>
+      </form>
+    </section>
+  </body>
+</html>
