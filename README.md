@@ -1,23 +1,36 @@
-# 🎓 TutorCenter – WebGL + 3D Landing
-Лендинг для команды репетиторов с **WebGL-шейдерным фоном** и **3D-перспективой карточек**.
+# TutorCenter — tutoring website
 
-## 📋 Структура
-| Блок | Описание |
-|------|----------|
-| **Hero** | WebGL-анимация + заголовок |
-| **О нас** | Фирма + фото команды |
-| **Программы** | 3D-карточки курсов |
-| **Отзывы** | Карусель из 7 отзывов |
-| **Форма** | Полная онлайн-запись |
-| **Футер** | Контакты, соцсети |
+Tutoring landing-page experiment with a WebGL background and perspective cards.
 
-## 🚀 Особенности
-- **WebGL-шейдер** – интерактивный фон без картинки
-- **3D-карточки** – наклон при наведении (CSS `transform`)
-- **Адаптив** – mobile-first
-- **GSAP** – лёгкая прокрутка и появление
+[Open website preview](https://evgenyponomarevnova.github.io/tutor-s-landing-page/)
 
-## Быстрый старт
-1. Сохраните `index.html`
-2. Замените `YOUR_ID` в `<form>` на Formspree / Telegram Bot
-3. Готово к показу
+## About
+
+A tutoring website presentation with program cards, reviews and a contact section. The visual experiments include a shader background and perspective effects.
+
+## Status and scope
+
+Earlier frontend work. The form needs a configured endpoint before it can receive real enquiries.
+
+## Run locally
+
+Clone the repository and serve its root with a static HTTP server. For example, with Python installed:
+
+```sh
+git clone https://github.com/EvgenyPonomarevNova/tutor-s-landing-page.git
+cd tutor-s-landing-page
+python -m http.server 8080
+```
+
+Open [localhost:8080](http://localhost:8080). A static server previews HTML/CSS/JavaScript; it does not execute PHP or connect external form services.
+
+## Repository guide
+
+- `image`
+- `index.html`
+- `scripts`
+- `style`
+
+## Author
+
+[Evgeny Ponomarev](https://github.com/EvgenyPonomarevNova/EvgenyPonomarevNova) · [Current products and selected work](https://github.com/EvgenyPonomarevNova/EvgenyPonomarevNova)
